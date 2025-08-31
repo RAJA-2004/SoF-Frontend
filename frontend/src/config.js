@@ -5,7 +5,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 const config = {
   API_BASE_URL: isDevelopment
     ? (process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000')
-    : (process.env.REACT_APP_API_URL || process.env.REACT_APP_BACKEND_URL || `${window.location.protocol}//${window.location.hostname}`),
+    : (process.env.REACT_APP_API_URL || process.env.REACT_APP_BACKEND_URL || 'https://sof-backend-production.up.railway.app'),
 
   // Other configuration options
   APP_NAME: 'SoF Event Extractor',

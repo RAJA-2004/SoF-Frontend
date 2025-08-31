@@ -6,7 +6,7 @@ module.exports = function (app) {
     app.use(
       '/api',
       createProxyMiddleware({
-        target: process.env.REACT_APP_API_URL || 'http://localhost:8000',
+        target: process.env.REACT_APP_API_URL || 'https://sof-backend-production.up.railway.app',
         changeOrigin: true,
         secure: false,
       })
